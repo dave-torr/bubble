@@ -1,0 +1,33 @@
+.dialogContainer{
+    width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aninputLabel{
+    margin: 6px 0;
+    display: block; 
+    width: 100px;
+}
+
+.submitBTN{
+    width: 150px;
+    padding: 9px 12px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    transition: var(--general-transition);
+    border: solid 1px black;
+    margin: 12px;
+}
+
+.submitBTN:hover{
+    cursor: pointer;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}

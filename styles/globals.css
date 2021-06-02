@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+:root{
+  /* colors */
+  --orange-highlight: #FFA312;
+  --greyBlueTheme: rgb(160, 173, 200);
+  --blueMainTheme: #021889;
+  --maroonMainTheme: rgb(100, 38, 9);
+
+  --aquaMistAuxTheme: rgb(62, 68, 110);
+  --darkGreySecTheme: rgb(92, 91, 93);
+  
+
+  --general-transition: all ease-in 0.3s;
+  
+  
+  --generalBoxShadow: 3px 3px 3px rgba(0, 0, 0, 0.23);
+  --aHighlightBoxShadow: 6px 8px 15px rgba(0, 0, 0, 0.258);
+}
