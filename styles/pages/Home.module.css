@@ -20,8 +20,64 @@
   height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
+  flex-direction: row;
+}
+
+.aHomeLikeCont{
+  padding: 21px;
+  transition: var(--general-transition);
+
+}
+
+.aHomeLikeCont:hover{
+  cursor: pointer;
+  color: var(--azureMainTheme);
+}
+
+.aHomeLikeIcon{
+  margin: 6px;
+}
+
+.likeIconText{
+  margin: 6px;
+  font-weight: 600;
+}
+
+.homeAuthBTN{
+  padding: var(--btnPadding);
+  font-size: 0.8em;
+  border: var(--transparentBorder);
+  width: 90px;
+  margin: 9px;
+  text-align: center;
+  transition: var(--general-transition);
+  box-shadow: var(--generalBoxShadow);
+}
+
+.homeAuthBTN:hover{
+  border: var(--thinBorder);
+  cursor: pointer;
+}
+
+.notificationIcon{
+  margin: 9px;
+  padding: 15px;
+  /* color: red; */
+  box-shadow: 1px 1px 0 maroon;
+}
+.notificationNoneIcon{
+  margin: 9px;
+  padding: 15px;
+}
+
+
+
+.profileName{
+  margin: 9px;
+  padding: 15px;
 }
 
 @media (max-width: 600px) {
