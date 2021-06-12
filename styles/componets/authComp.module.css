@@ -12,7 +12,8 @@
     display: flex;
     flex-direction: column;
     padding: 60px 67px;
-    border: solid 1px var(--orange-highlight);
+    border: solid 3px teal;
+    border-radius: 12px;
 }
 
 .signInModalTitle{
@@ -41,7 +42,7 @@
 }
 
 .logInBtn:hover{
-    border: solid 1px var(--orange-highlight);
+    border: solid 1px teal;
     cursor: pointer;
 }
 

@@ -1,0 +1,26 @@
+.ProfileHeadCont{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.profilePic{
+    border-radius: 50%;
+    border: solid 5px var(--azureMainTheme);
+    margin: 21px;
+}
+
+.profileName{
+    font-size: 4em;
+    width: 100%;
+    /* text-transform: uppercase; */
+    padding: 0;
+    margin: 0%;
+    text-transform: uppercase;
+    font-weight: 200;
+    transform: translateY(11px);
+}

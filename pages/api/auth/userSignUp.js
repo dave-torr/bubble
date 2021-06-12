@@ -39,7 +39,14 @@ handler.post(async (req, res) => {
       company: "bubl S.A.",
       userType: "partner",
       signUpStream: "website",
-       })
+      notifications: ["profilePic", "address", "foodLikes", "eventLikes", "pictureLikes" ],
+      profilePic: null,
+      addressObj: Object,
+      foodLikes: [],
+      eventLikes: [],
+      pictureLikes: [],
+      ptc: 0,
+    })
     .then(({ ops }) => ops[0]);
       req.logIn(user, (err) => {
       if (err) throw err;

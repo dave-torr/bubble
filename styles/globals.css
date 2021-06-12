@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&display=swap');
+
 html,
 body {
   padding: 0;
@@ -15,8 +17,7 @@ a {
   box-sizing: border-box;
 }
 :root{
-  --orange-highlight: #FFA312;
-  --azureMainTheme: rgb(0, 208, 255);
+  --azureMainTheme: rgb(7, 160, 194);
   --blueMainTheme: #021889;
   --maroonMainTheme: rgb(100, 38, 9);
 
@@ -29,6 +30,6 @@ a {
   --aHighlightBoxShadow: 6px 8px 15px rgba(0, 0, 0, 0.258);
 
   --transparentBorder: solid 1px transparent;
-  --thinBorder: solid 1px black;
+  --thinBorder: solid 0.5px rgba(0, 0, 0, 0.405);
   --btnPadding: 6px 12px;
 }

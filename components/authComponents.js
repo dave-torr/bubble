@@ -48,7 +48,7 @@ export function SignInPopUp(props){
                     <div className={styles.signInModalTitle}> 
                     sign in to bubl.app</div>
 
-                    {props.errorMsg ? <p style={{ color: 'white' }}>{props.errorMsg}</p> : null}
+                    {props.errorMsg ? <p style={{ color: 'red' }}>{props.errorMsg}</p> : null}
                     <label htmlFor="email">
                         <input
                         className={styles.logInInput}

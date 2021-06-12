@@ -1,0 +1,503 @@
+ 
+ [
+    { 
+        "profileName": "Romolo e Remo",
+        "profileURL": "romoloeremo",
+        "administrator": "BAHSUUSBEBTAS",
+        "businessType": "F&B",
+        "restType": "Itaolo-Romana",
+        "signupDate": "6/10/2021",
+        "logoLocation": "/assets/sampleLogos/romoloeRemo.png",
+        "resturantMenu": [
+            {"menuSection": "ANTIPASTI/ENTRADAS",
+                "sectionItems": [
+                    { "prodcutName": "Ensaladas Caprese",
+                        "price": 5.95,                  
+                        "description" :"(Tomates frescos, mozzarella, albahaca)"},
+                    { "prodcutName": "Insalata Primavera",
+                        "price": 6.05,                  
+                        "description" :"(Rúcula, lechuga, champiñones, atún, tomates frescos, queso fresco, albahaca, vinagreta)"},
+                    { "prodcutName": "Insalata Estate",
+                        "price": 5.95,                  
+                        "description" :"(Rúcula, lechuga, tomates secos, albahaca, ricotta, vinagreta)"},
+                    { "prodcutName": "Insalata Autunno",
+                        "price": 6.15,                  
+                        "description" :"(Rúcula, lechuga, nueces, aceitunas, peras, mozzarella y miel)"},
+                    { "prodcutName": "Insalata Mediterranea",
+                        "price": 7.05,                  
+                        "description" :"(Rúcula, lechuga, maíz, camarones, salsa rosada)"},
+                    { "prodcutName": "Insalata di Polpo",
+                        "price": 11.25,                  
+                        "description" :"(Pulpo, apio, papas, zanahoria, aceite extra virgen de oliva, perejil)"},
+                    { "prodcutName": "Sautè de almejas",
+                        "price": 12.25,                  
+                        "description" :"(Almejas, vino blanco y perejil)"},
+                    { "prodcutName": "Pulpo a la parrilla con Pesto y papas al horno",
+                        "price": 12.50,                  
+                        "description" :"(Pulpo, salsa soya, paprika dulce, pesto, papas)"},
+                    { "prodcutName": "Mozzarella e Zucchine scapece",
+                        "price": 6.05,                  
+                        "description" :"(Mozarela, zuquini)"},
+                    { "prodcutName": "Bresaola, rughetta e parmigiano",
+                        "price": 6.65,                  
+                        "description" :"(Bresaola, rúcula, hojuelas de parmesano)"},
+                    { "prodcutName": "Burrata, rughetta e pomodoro",
+                        "price": 6.05,                  
+                        "description" :"(Burrata, rúcula y tomate fresco)"},
+                    { "prodcutName": "Burrata e prosciutto",
+                        "price": 8.25,                  
+                        "description" :"(Burrata, prosciutto italiano serrano)"},
+                    { "prodcutName": "Bruschetta al pomodoro",
+                        "price": 1.35,                   
+                        "description" :"(Pan al horno, tomate fresco, albahaca, aceite de oliva)"}
+                ]
+            },
+            {"menuSection": "Cremas",
+                "sectionItems":[
+                    { "prodcutName": "Minestrone dell'Orto",
+                        "price": 6.25,  
+                        "description" :"(Vegetales frescos, salsa al pesto)"},
+                    { "prodcutName": "Zuppa di Ceci",
+                        "price": 6.25,  
+                        "description" :"(Garbanzos, romero)"},
+                    { "prodcutName": "Zuppa di lenticchie al timo",
+                        "price": 6.25,
+                        "description" :"(Lentejas, tomillo)"},
+                    { "prodcutName": "Crema di spinaci",
+                        "price": 5.50,
+                        "description" :"(Fondue de espinacas, quesos, mozzarella)"},
+                    { "prodcutName": "Crema de Tomate",
+                        "price": 6.25,
+                        "description" :"(Fondue de espinacas, quesos, mozarella)"}
+                ]
+            },
+            {"menuSection": "Embutidos",
+                "sectionItems":[
+                    { "prodcutName": "Tabla de embutidos italianos",
+                        "price": 7.05,
+                        "description" :"Una persona",
+                        "variant": {
+                            "varDescription": "Dos personas",
+                            "varPrice": 13.95
+                        }},
+                    { "prodcutName": "Tabla de embutidos y quesos",
+                        "price": 8.80,
+                        "description" :"Una persona",
+                        "variant": {
+                            "varDescription": "Dos personas",
+                            "varPrice": 17.05
+                        }},
+                    { "prodcutName": "Antipasto All' Italiana",
+                        "price": 10.25
+                        },
+                    { "prodcutName": "Antipasto Romolo e Remo",
+                        "price": 26.5
+                        }
+                ]
+            },
+            {"menuSection": "Pastas",
+                "sectionVariant":{
+                    "varDescription": "Media porción de Pasta disponible con Spaghetti",
+                    "price": 4.25
+                },
+                "sectionItems":[
+                    { "prodcutName": "Fettuccine al Ragú",
+                        "price": 8.25,
+                        "description" :"(Tomate, carne, parmigiano)"},
+                    { "prodcutName": "Penne all'Arrabbiata",
+                        "price": 7.85,
+                        "description" :"(Tomates frescos, perejil, chili picante)"},
+                    { "prodcutName": "Lasagna al Ragú",
+                        "price": 8.55,
+                        "description" :"(Tomate, carne, parmigiano, mozzarella)"},
+                    { "prodcutName": "Lasagna Vegetariana",
+                        "price": 8.65,
+                        "description" :"(Espárragos, champiñones, parmigiano, mozarrella)"},
+                    { "prodcutName": "Gnocchi alla Sorrentina / Gnocchi 4 formaggi",
+                        "price": 8.55,
+                        "description" :"(Tomates frescos, mozarella, parmigiano, albahaca)"},
+                    { "prodcutName": "Fusilli al Pomodoro",
+                        "price": 7.85,
+                        "description" :"(Tomates, albahaca, parmigiano)"},
+                    { "prodcutName": "Pasta al Forno",
+                        "price": 8.65,
+                        "description" :"(Tomates, carne molida, mozzarella, parmigiano)"},
+                    { "prodcutName": "Fettuccine Ajo Oio e Zucchine",
+                        "price": 7.85,
+                        "description" :"(Zuquini, perejil, parmigiano)"},
+                    { "prodcutName": "Spaghetti burro, pepe, salvia e parmigiano",
+                        "price": 7.65,
+                        "description" :"(Mantequilla, pimienta negra, salvia, parmesano)"},
+                    { "prodcutName": "Spaghetti alla Puttanesca",
+                        "price": 8.75,
+                        "description" :"(Anchoas, alcaparras, aceitunas, tomate fresco)"},
+                    { "prodcutName": "Spaghetti al Pesto",
+                        "price": 8.55,
+                        "description" :"(Albahaca, nueces, ajo, parmesano)"},
+                    { "prodcutName": "Fettuccine Romolo e Remo",
+                        "price": 8.55,
+                        "description" :"(Champiñones, chorizo italiano, salsa Romolo e Remo)"},
+                    { "prodcutName": "Fettuccine con le polpette",
+                        "price": 8.65,
+                        "description" :"(Albóndigas de carne de res con tomate)"},
+                    { "prodcutName": "Spaghetti all'Amatriciana",
+                        "price": 8.55,
+                        "description" :"(Tocino italiano, tomates, cebolla, parmigiano)"},
+                    { "prodcutName": "Spaghetti alla Carbonara",
+                        "price": 8.65,
+                        "description" :"(Tocino italiano, uova, parmigiano, pimienta negra)"},
+                    { "prodcutName": "Penne alla gricia",
+                        "price": 8.55,
+                        "description" :"(Tocino italiano, cebolla, parmigiano, pimienta negra)"},
+                    { "prodcutName": "Ravioli di Carne",
+                        "price": 8.55,
+                        "description" :"(Mantequilla, salvia, parmesano)"},
+                    { "prodcutName": "Ravioli Ricotta e Spinaci",
+                        "price": 8.55,
+                        "description" :"(Leche, almendras, parmigiano)"},
+                    { "prodcutName": "Spaghetti con le Vongole",
+                        "price": 10.0,
+                        "description" :"(Almejas, perejil, vino blanco, ajo)"},
+                    { "prodcutName": "Gnocchi Gamberi e Zucchine",
+                        "price": 11.0,
+                        "description" :"(Almejas, perejil, vino blanco, ajo)"},
+                    { "prodcutName": "Fettuccine con Langostinos",
+                        "price": 11.25,
+                        "description" :"(Langostinos, tomate fresco, perejil, vino blanco, ajo)"},
+                    { "prodcutName": "Spaghetti ai Frutti di mare",
+                        "price": 12.50,
+                        "description" :"(Almejas, Langostinos, camarones, pulpo, salsa del chef)"}
+                ]
+            },
+            {"menuSection": "CONTORNI / ACOMPAÑAMIENTOS",
+                "sectionItems":[
+                    { "prodcutName": "Patate al forno",
+                        "price": 5.75,
+                        "description" :"(Papas, romero y laurel)"},
+                    { "prodcutName": "Insalata fresca",
+                        "price": 3.85,
+                        "description" :"(Rúcula, lechuga, tomate)"},
+                    { "prodcutName": "Zucchine Scapece",
+                        "price": 4.15,
+                        "description" :"(Zuquini, albahaca, aceite extravirgen, sal y pimienta)"},
+                    { "prodcutName": "Cestino del pane",
+                        "price": 2.95,
+                        "description" :"(Focaccia, scrocchiarella y surtido de grissini)"}
+                ]
+            },
+            {"menuSection": "PIZZE",
+                "sectionItems":[
+                    { "prodcutName": "Margherita",
+                        "price": 4.45,
+                        "description" :"(Tomate, mozzarella, albahaca)"},
+                    { "prodcutName": "Diavola/",
+                        "price": 5.15,
+                        "description" :"(Tomate, mozzarella, salame picante)",
+                        "variant": {
+                            "varDescription": "En 4 Formaggi",
+                            "varPrice": 5.95
+                        }},     
+                    { "prodcutName": "Marinara",
+                        "price": 5.75,
+                        "description" :"(Tomate, anchoas, orégano, mozzarella)"},
+                    { "prodcutName": "Zuquini/",
+                        "price": 4.95,
+                        "description" :"(Zuquini, mozzarella)",
+                        "variant": {
+                            "varDescription": "Anchoas",
+                            "varPrice": 6.15
+                        }},     
+                    { "prodcutName": "Crostino / ",
+                        "price": 5.15,
+                        "description" :"(Jamón de pierna, mozzarella)",
+                        "variant": {
+                            "varDescription": "Crostino con Champi",
+                            "varPrice": 5.45
+                        }},     
+                    { "prodcutName": "Champiñones rossa",
+                        "price": 4.85,
+                        "description" :"(Tomate, champiñones, mozzarella)"},
+                    { "prodcutName": "Champiñones bianca",
+                        "price": 4.95,
+                        "description" :"(Champiñones, mozzarella)"},
+                    { "prodcutName": "Espinacas/",
+                        "price": 4.95,
+                        "description" :"(Espinacas, mozzarella)",
+                        "variant": {
+                            "varDescription": "En 4 Formaggi",
+                            "varPrice": 5.75
+                        }},
+                    { "prodcutName": "Capricciosa",
+                        "price": 5.55,
+                        "description" :"(Tomate, aceitunas, alcachofas, jam ón de pierna, champiñones, mozzarella)"},
+                    { "prodcutName": "De Rughetta",
+                        "price": 5.45,
+                        "description" :"(Tomate, champiñones, jamón de pierna, rúcula)"},
+                    { "prodcutName": "4 Formaggi",
+                        "price": 5.45,
+                        "description" :"(Gorgonzola, lechona, queso semimaduro, mozzarella)"},
+                    { "prodcutName": "Provola affumicata e mozzarella",
+                        "price": 5.35,
+                        "description" :"(Tomate, próvola ahumada, mozzarella, albahaca)"},
+                    { "prodcutName": "Próvola, speck e rughetta",
+                        "price": 7.35,
+                        "description" :"(Tomate, próvola ahumada, mozzarella, speck e rúcula)"},
+                    { "prodcutName": "Funghi e salsiccia",
+                        "price": 5.95,
+                        "description" :"(Champiñones, chorizo italiano, mozzarella)"}
+                ]
+            },
+            {"menuSection": "SECONDI PIATTI / PLATOS FUERTES",
+                "sectionItems":[
+                    { "prodcutName": "Saltimbocca alla Romana",
+                        "price": 8.25,
+                        "description" :"(Carne de res, mozzarella, jamón de pierna)"},
+                    { "prodcutName": "Straccetti de Roma",
+                        "price": 8.25,
+                        "description" :"(Carne de res aceite extra vergine d´olvida, champiñones, pimienta negra)"},
+                    { "prodcutName": "Straccetti coi funghi",
+                        "price": 8.35,
+                        "description" :"(Carne de res, aceite extra vergine d´oliva, champiñones, pimienta negra)"},
+                    { "prodcutName": "Straccetti al gorgonzola",
+                        "price": 8.45,
+                        "description" :"(Carne de res, aceite extra vergine d´oliva, gorgonzola, pimienta negra)"},
+                    { "prodcutName": "Salsiccia e patate",
+                        "price": 8.45,
+                        "description" :"(Chorizo italiano, papas)"},
+                    { "prodcutName": "Fettina all'ojo, sale e pepe",
+                        "price": 8.25,
+                        "description" :"(Carne de res, aceite extra vergine d´oliva, sal, pimienta negra)"},
+                    { "prodcutName": "Filetto al pepe nero",
+                        "price": 8.45,
+                        "description" :"(Lomo de carne de res, pimienta negra, crema)"},
+                    { "prodcutName": "Pollo alla Romana",
+                        "price": 8.35,
+                        "description" :"(Pollo, tomate, pimiento, cebolla, hierbas)"},
+                    { "prodcutName": "Pollo alla cacciatora",
+                        "price": 8.35,
+                        "description" :"(Pollo, papas, cebollas, hierbas)"},
+                    { "prodcutName": "Polpette al pomodoro",
+                        "price": 8.45,
+                        "description" :"(Albóndigas de carne de res con tomate)"},
+                    { "prodcutName": "Langostinos flambeados con papas al horno",
+                        "price": 11.0,
+                        "description" :"(Langostinos, ajo, perejil, papas, lechuga, rúcula)"},
+                    { "prodcutName": "Picudo a la hierbas finas",
+                        "price": 11.0,
+                        "description" :"(Picudo, hierbas finas, ensalada, papas al horno)"},
+                    { "prodcutName": "Frittura mista di calamari e gamberi",
+                        "price": 11.50,
+                        "description" :"(Calamares y camarones fritos, lechuga)"}
+                ]
+            },
+            {"menuSection": "FOCACCE",
+                "sectionItems":[
+                    { "prodcutName": "Buona",
+                        "price": 5.15,
+                        "description" :"(Rucula, jamón de pierna, mozzarella)"},
+                    { "prodcutName": "Classica",
+                        "price": 5.60,
+                        "description" :"(Prosciutto italiano serrano, mozzarella)"},
+                    { "prodcutName": "Parma",
+                        "price": 5.95,
+                        "description" :"Rúcula, Prosciutto italiano serrano, champiñones, parmigiano"},
+                    { "prodcutName": "Norcia",
+                        "price": 5.60,
+                        "description" :"(Salame, ricotta, tomates secos)"},
+                    { "prodcutName": "Casareccia",
+                        "price": 5.60,
+                        "description" :"(Rúcula, salame mozzarella)"},
+                    { "prodcutName": "Gustosa",
+                        "price": 5.95,
+                        "description" :"(Rúcula, prosciuti Italiano serrano, ricotta, tomates secos)"},
+                    { "prodcutName": "Deliziosa",
+                        "price": 6.05,
+                        "description" :"(Rúcula, coppa, gorgonzola)"},
+                    { "prodcutName": "Altotesina",
+                        "price": 5.65,
+                        "description" :"(Rúcula, speck, mozarella, champiñones)"},
+                    { "prodcutName": "Tirolese",
+                        "price": 5.65,
+                        "description" :"(Rúcula, speck, próvola ahumada, tomates secos)"},
+                    { "prodcutName": "Valtellina",
+                        "price": 5.45,
+                        "description" :"(Rúcula, bresaola, parmesano)"},
+                    { "prodcutName": "Ricca",
+                        "price": 5.45,
+                        "description" :"(Rúcula, lechuga, atún, tomates frescos, mayonesa)"},
+                    { "prodcutName": "Borgatara",
+                        "price": 5.95,
+                        "description" :"(Rúcula, prosciuto italiano serrano, mozarella, champiñones)"},
+                    { "prodcutName": "Polpettosa",
+                        "price": 7.70,
+                        "description" :"(Albóndigas de carne de res, mozarella)"},
+                    { "prodcutName": "Zozzona",
+                        "price": 6.30,
+                        "description" :"(Chorizo italiano, lechuga, mayonesa)"},
+                    { "prodcutName": "Caprese",
+                        "price": 5.15,
+                        "description" :"(Tomates frescos, mozarella, albahaca)"},
+                    { "prodcutName": "Vegetariana",
+                        "price": 5.15,
+                        "description" :"(Rúcula, lechuga, ricotta, tomates secos, tomates frescos,"},
+                    { "prodcutName": "Nutella",
+                        "price": 5.50,
+                        "description" :"(Nutella)"}
+                ]
+            },
+            {"menuSection": "DOLCI / POSTRES",
+                "sectionItems":[
+                    { "prodcutName": "Tiramisú",
+                        "price": 4.30,
+                        "variant": {
+                            "varDescription": "Media Porcion",
+                            "varPrice": 2.35
+                        }},
+                    { "prodcutName": "Gelato artigianale della Mamma",
+                        "price": 4.30,
+                        "variant": {
+                            "varDescription": "Media Porcion",
+                            "varPrice": 2.35
+                        }},
+                    { "prodcutName": "Crepe di Nutella",
+                        "price": 3.95
+                        },
+                    { "prodcutName": "Crostata",
+                        "price": 4.80,
+                        "variant": {
+                            "varDescription": "Media Porcion",
+                            "varPrice": 2.50
+                        }},
+                    { "prodcutName": "Mousse di Chocolate",
+                        "price": 2.90
+                        },
+                    { "prodcutName": "Cheesecake di fragole",
+                        "price": 3.00
+                        },
+                    { "prodcutName": "Salame di cioccolata",
+                        "price": 2.90
+                        },
+                    { "prodcutName": "Meraviglie dolci x 2 personas",
+                        "price": 13.70
+                        },
+                    { "prodcutName": "Fragole con la panna",
+                        "price": 4.00,
+                        "description" :"(Frutillas, limon, azúcar, crema de leche)"},
+                    { "prodcutName": "Ananas al limoncello",
+                        "price": 3.90,
+                        "description" :"(Piña, limoncello o crema de leche)"},
+                    { "prodcutName": "Gelato Italiano 1, 2, o 3 sabores",
+                        "price": 1.80,
+                        "variant": {
+                            "varDescription": "2 sabores",
+                            "varPrice": 2.80
+                        },
+                        "variant2": {
+                            "varDescription": "3 sabores",
+                            "varPrice": 3.70
+                        }},    
+                    { "prodcutName": "Extra de crema",
+                        "price": 0.50
+                        }
+                ]
+            },
+            {"menuSection": "BIBITE / BEBIDAS",
+                "sectionItems":[
+                    { "prodcutName": "Fuze tea",
+                        "price": 1.65,
+                        "variant": {
+                            "varDescription": "Grande",
+                            "varPrice": 1.95
+                        }},
+                    { "prodcutName": "Gaseosas / Coca cola Zero o Light",
+                        "price": 1.65,
+                        "variant": {
+                            "varDescription": "Grande",
+                            "varPrice": 1.95
+                        }},
+                    { "prodcutName": "Agua sin gas / Con Gas",
+                        "price": 1.60
+                        },
+                    { "prodcutName": "Limonada con gas o sin gas/Jarra",
+                        "price": 2.40,
+                        "variant": {
+                            "varDescription": "Jarra",
+                            "varPrice": 6.20
+                        }},
+                    { "prodcutName": "Jugo del Día",
+                        "price": 2.40,
+                        "variant": {
+                            "varDescription": "Jarra",
+                            "varPrice": 6.20
+                        }},
+                    { "prodcutName": "Pilsener / Michelada",
+                        "price": 2.45,
+                        "variant": {
+                            "varDescription": "Michelada",
+                            "varPrice": 2.95
+                        }},
+                    { "prodcutName": "Club / Michelada",
+                        "price": 2.45,
+                        "variant": {
+                            "varDescription": "Michelada",
+                            "varPrice": 2.95
+                        }},
+                    { "prodcutName": "Cerveza Artesanal (Rubia / Roja / Negra)",
+                        "price": 5.25
+                        },
+                    { "prodcutName": "Hofbrau Munchen (Rubia/Trigo/Negra)",
+                        "price": 4.30
+                        },
+                    { "prodcutName": "Ladenburger 500ml Trigo/Oscura/ 0%",
+                        "price": 5.60
+                        },
+                    { "prodcutName": "Peroni Nastro Azurro",
+                        "price": 4.10
+                        },
+                    { "prodcutName": "Corona / Stella Damm",
+                        "price": 3.70,
+                        "variant": {
+                            "varDescription": "Stella Dam",
+                            "varPrice": 4.10
+                        }},
+                    { "prodcutName": "Stella Artois / Sidra",
+                        "price": 4.10
+                        },
+                    { "prodcutName": "Vinos, Copa, 1/2 litro o botella",
+                        "price": "aLaCarte" }
+                ]
+            },
+            {"menuSection": "Caffetteria",
+                "sectionItems":[
+                    { "prodcutName": "Espresso/Macchiato",
+                        "price": 2.00
+                        },
+                    { "prodcutName": "Americano",
+                        "price": 2.05
+                        },
+                    { "prodcutName": "Cappuccino",
+                        "price": 2.15
+                        },
+                    { "prodcutName": "Café con leche",
+                        "price": 2.10
+                        },
+                    { "prodcutName": "Moccacino",
+                        "price": 2.45
+                        },
+                    { "prodcutName": "Aguitas aromaticas",
+                        "price": 1.80
+                        },
+                    { "prodcutName": "Té de cacao Ninacao",
+                        "price": 1.80
+                        },
+                    { "prodcutName": "Té de fruta orgánica deshidratada",
+                        "price": 2.50
+                        },
+                    { "prodcutName": "Caffé corretto",
+                        "price": 3.15
+                        }
+                ]
+            }
+        ]
+    }
+]
