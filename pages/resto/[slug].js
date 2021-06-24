@@ -75,11 +75,6 @@ export async function getStaticPaths() {
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false }
 }
-
-
-
-
-
 export async function getStaticProps(context) {
   // const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
 

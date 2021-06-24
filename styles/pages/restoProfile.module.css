@@ -12,3 +12,9 @@
     margin: 6px 0 ;
     color: rgb(94, 93, 93);
 }
+
+@media (max-width: 700px) {
+    .breadCrumbs{
+        font-size: 1em;
+    }
+}

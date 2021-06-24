@@ -25,3 +25,9 @@
     font-weight: 200;
     transform: translateY(11px);
 }
+
+@media (max-width: 700px) {
+    .profileName{
+        font-size: 2.5em;
+    }
+}

@@ -58,9 +58,10 @@ export function DescripcionGeneral(props){
         let anOpeningTimeListing = theData.map((elem, i)=><>
             <div className={styles.eachOPTimeCont} key={i}> 
                 <div className={styles.eachOpTimeRange}> {dayRangeDisplayer(elem.dayRange)}: </div>
-                <div className={styles.eachOpTime}> {timeDisplayers(elem.opens)} - {timeDisplayers(elem.closes)} </div>
-                {elem.opens2&&<>
-                    <div className={styles.eachOpTime}> &nbsp;|| {timeDisplayers(elem.opens2)} - {timeDisplayers(elem.closes2)} </div></>}                
+                <div className={styles.timeDispCont}>
+                    <div className={styles.eachOpTime}> {timeDisplayers(elem.opens)} - {timeDisplayers(elem.closes)} </div>
+                    {elem.opens2&&<><div className={styles.eachOpTime}>{timeDisplayers(elem.opens2)} - {timeDisplayers(elem.closes2)} </div></>}                
+                </div>
             </div>
         </>)
         return(
@@ -81,6 +82,9 @@ export function DescripcionGeneral(props){
                 <div className={styles.aMenuTitle}> 
                     Descripcion General
                 </div>
+                <div className={styles.generalRestoDescription}>
+                    Aliqua non magna minim laborum. Aliqua voluptate tempor minim reprehenderit sint culpa fugiat officia laboris minim. Id adipisicing dolore aliquip cillum dolore velit laboris deserunt dolor deserunt veniam non.
+                </div>
                 <div className={styles.DataGrid}>
                     {/* {dataGridItem(<LocationOnIcon />, "Direccion" )}  */}
                     {dataGridItem(<MapIcon />, "Abrir en GMaps" )} 
@@ -88,9 +92,6 @@ export function DescripcionGeneral(props){
                     {dataGridItem(<RestaurantMenuIcon />, "Dine -In || Take Away || Delivery" )} 
                     </div>
                     {openingTimes(props.aProfile.operationTimes)}
-                <div className={styles.generalRestoDescription}>
-                    Aliqua non magna minim laborum. Aliqua voluptate tempor minim reprehenderit sint culpa fugiat officia laboris minim. Id adipisicing dolore aliquip cillum dolore velit laboris deserunt dolor deserunt veniam non.
-                </div>
 
             </div> 
         </>
