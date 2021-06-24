@@ -58,7 +58,7 @@ function FNBProfile({ aProfile }){
 
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch('/api/resto/fetchRestoData')
+  const res = await fetch('https://www.bubl.uno/api/resto/fetchRestoData')
   const restoOpts = await res.json()
 
   // Get the paths we want to pre-render based on restoOpts
@@ -70,7 +70,7 @@ export async function getStaticPaths() {
   return { paths, fallback: false }
 }
 export async function getStaticProps({params}) {
-  const res = await fetch('/api/resto/fetchRestoData')
+  const res = await fetch('https://www.bubl.uno/api/resto/fetchRestoData')
   const restoOpts = await res.json()
   let aProfile = restoOpts.find(elem =>( elem.profileURL === params.slug) )
   return {
