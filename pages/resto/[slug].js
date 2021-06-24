@@ -1,8 +1,8 @@
 import {ProfileHead} from "../../components/profileComponents"
 import {RestoMenu, DescripcionGeneral} from "../../components/restoComp"
 import styles from "./../../styles/pages/restoProfile.module.css"
-import { connectToDatabase } from "../../utils/mongodb";
 
+import { connectToDatabase } from "../../utils/mongodb";
 
 function FNBProfile({ aProfile }){
 
@@ -43,8 +43,6 @@ function FNBProfile({ aProfile }){
           Menu is not Online Yet!
         </>}
 
-{console.log(aProfile)
-}
       <br></br>
       <br></br>
       <br></br>
@@ -60,16 +58,14 @@ function FNBProfile({ aProfile }){
 
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  // const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
-  const res = async(response)=>{
-    const { db } = await connectToDatabase();
-    const profiles = await db
-      .collection("fandb")
-      .find({})
-      .toArray();
-      response.json(profiles);
-  }
-  const restoOpts = await res.json()
+  const { db } = await connectToDatabase();
+
+  const profiles = await db
+    .collection("fandb")
+    .find({})
+    .toArray();
+  
+  const restoOpts = JSON.parse(JSON.stringify(profiles))
 
   // Get the paths we want to pre-render based on restoOpts
   const paths = restoOpts.map((post) => ({
@@ -81,19 +77,20 @@ export async function getStaticPaths() {
 }
 
 
+
+
+
 export async function getStaticProps(context) {
-
   // const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
-  const res = async(response)=>{
-    const { db } = await connectToDatabase();
-    const profiles = await db
-      .collection("fandb")
-      .find({})
-      .toArray();
-      response.json(profiles);
-  }
 
-  const restoOpts = await res.json()
+  const { db } = await connectToDatabase();
+
+  const profiles = await db
+    .collection("fandb")
+    .find({})
+    .toArray();
+  
+  const restoOpts = JSON.parse(JSON.stringify(profiles))
   let aProfile = restoOpts.find(elem =>( elem.profileURL === context.params.slug) )
   return {
     props: {
