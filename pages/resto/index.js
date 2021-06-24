@@ -1,3 +1,4 @@
+import { connectToDatabase } from "../../utils/mongodb"
 
 import Link from "next/link"
 
@@ -26,9 +27,14 @@ function RestoPage({restoOpts}){
 
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
-  const restoOpts = await res.json()
+  const { db } = await connectToDatabase();
 
+  const profiles = await db
+    .collection("fandb")
+    .find({})
+    .toArray();
+  
+  const restoOpts = JSON.parse(JSON.stringify(profiles))
   return {
     props: {
       restoOpts,
