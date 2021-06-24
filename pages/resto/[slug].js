@@ -1,6 +1,8 @@
 import {ProfileHead} from "../../components/profileComponents"
 import {RestoMenu, DescripcionGeneral} from "../../components/restoComp"
 import styles from "./../../styles/pages/restoProfile.module.css"
+import { connectToDatabase } from "../../utils/mongodb";
+
 
 function FNBProfile({ aProfile }){
 
@@ -58,7 +60,15 @@ function FNBProfile({ aProfile }){
 
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch('https://www.bubl.uno/api/resto/fetchRestoData')
+  // const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
+  const res = async(response)=>{
+    const { db } = await connectToDatabase();
+    const profiles = await db
+      .collection("fandb")
+      .find({})
+      .toArray();
+      response.json(profiles);
+  }
   const restoOpts = await res.json()
 
   // Get the paths we want to pre-render based on restoOpts
@@ -69,10 +79,22 @@ export async function getStaticPaths() {
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false }
 }
-export async function getStaticProps({params}) {
-  const res = await fetch('https://www.bubl.uno/api/resto/fetchRestoData')
+
+
+export async function getStaticProps(context) {
+
+  // const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
+  const res = async(response)=>{
+    const { db } = await connectToDatabase();
+    const profiles = await db
+      .collection("fandb")
+      .find({})
+      .toArray();
+      response.json(profiles);
+  }
+
   const restoOpts = await res.json()
-  let aProfile = restoOpts.find(elem =>( elem.profileURL === params.slug) )
+  let aProfile = restoOpts.find(elem =>( elem.profileURL === context.params.slug) )
   return {
     props: {
       aProfile
@@ -80,4 +102,6 @@ export async function getStaticProps({params}) {
     revalidate: 100, // In seconds
   }
 }
+
+
 export default FNBProfile;
