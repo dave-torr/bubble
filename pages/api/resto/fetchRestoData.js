@@ -4,9 +4,9 @@ import { connectToDatabase } from "../../../utils/mongodb";
 export default async (req, res) => {
   const { db } = await connectToDatabase();
 
-  const YachtAnahiDepartures = await db
+  const profiles = await db
     .collection("fandb")
     .find({})
     .toArray();
-  res.json(YachtAnahiDepartures);
+  res.json(profiles);
 };
