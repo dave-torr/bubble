@@ -1,11 +1,13 @@
 .ProfileHeadCont{
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    border-bottom: solid 2px var(--azureMainTheme);
+    box-shadow: var(--generalBoxShadow);
 }
 
 .profilePic{
@@ -17,7 +19,6 @@
 .profileName{
     font-size: 4em;
     width: 100%;
-    /* text-transform: uppercase; */
     padding: 0;
     margin: 0%;
     text-transform: uppercase;

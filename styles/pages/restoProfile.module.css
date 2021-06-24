@@ -1,0 +1,14 @@
+.restoProfile{
+    background-color: whitesmoke;
+}
+
+.breadCrumbs{
+    min-height: 30px;
+    width: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.4em;
+    padding: 9px 15px;
+    margin: 6px 0 ;
+    color: rgb(94, 93, 93);
+}

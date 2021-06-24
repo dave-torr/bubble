@@ -8,6 +8,16 @@
         "restType": "Itaolo-Romana",
         "signupDate": "6/10/2021",
         "logoLocation": "/assets/sampleLogos/romoloeRemo.png",
+        "operationTimes":[
+            {"dayRange": [0,1,2,3,4],
+            "opens": 9,
+            "closes": 14,
+            "opens2":16,
+            "closes2": 23},
+            {"dayRange": [5],
+            "opens": 16,
+            "closes": 23.5}
+        ],
         "resturantMenu": [
             {"menuSection": "ANTIPASTI/ENTRADAS",
                 "sectionItems": [

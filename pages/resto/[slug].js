@@ -1,23 +1,48 @@
 import {ProfileHead} from "../../components/profileComponents"
-import {RestoMenu} from "../../components/restoComp"
+import {RestoMenu, DescripcionGeneral} from "../../components/restoComp"
+import styles from "./../../styles/pages/restoProfile.module.css"
 
 function FNBProfile({ aProfile }){
 
+
+  const restaurantVerifyer=(theRestType)=>{
+    if(theRestType==="fineDining"){
+      return "/ fine dining"
+    } else if(theRestType==="fastFood"){
+      return "/ fast Food"
+    } else if(theRestType==="patisserie"){
+      return "/ Patisserie & Cafe"
+    } else if(theRestType==="bar"){
+      return "/ Bar, Drinks & Snacks"
+    }
+  }
+
+
+
   return(
     <>
-      <div style={{"height": "110vh" }}>
+      <div  className={styles.restoProfile}>
         <ProfileHead
           aProfile={aProfile}
         />
+        <div className={styles.breadCrumbs}>
+          <div>/ food and beverage {restaurantVerifyer(aProfile.businessType.subType)} </div>
+        </div>
+
+        <DescripcionGeneral 
+          aProfile={aProfile}
+        />
+
         {aProfile.resturantMenu? 
-        <>
-          <RestoMenu 
+        <><RestoMenu 
             aMenu={aProfile.resturantMenu}
           />
         </>:<>
           Menu is not Online Yet!
         </>}
 
+{console.log(aProfile)
+}
       <br></br>
       <br></br>
       <br></br>
@@ -47,9 +72,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}) {
   const res = await fetch('http://localhost:3000/api/resto/fetchRestoData')
   const restoOpts = await res.json()
-
   let aProfile = restoOpts.find(elem =>( elem.profileURL === params.slug) )
-
   return {
     props: {
       aProfile
@@ -57,5 +80,4 @@ export async function getStaticProps({params}) {
     revalidate: 100, // In seconds
   }
 }
-
 export default FNBProfile;

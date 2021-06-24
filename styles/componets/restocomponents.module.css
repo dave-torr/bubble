@@ -18,7 +18,8 @@
 }
 .accordionHead{
     text-transform: uppercase;
-    background-color: whitesmoke;
+    background-color: white;
+    font-size: 1.2em;
 }
 
 .accordionContent{
@@ -41,7 +42,6 @@
 
 .ItemDescription{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 4px;
 }
 
 
@@ -50,11 +50,99 @@
     justify-content: space-between;
     padding: 6px 6px;
     border-top: solid 1px rgba(128, 128, 128, 0.366);
-    width: 90%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .varDescription{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 4px 12px;
+}
+
+.ItemPrice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49px;
+    border-left: dotted 1px grey;
+    padding-left: 21px;
+}
+
+.itemData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.variantCont{
+    padding-right: 6px;
+}
+
+.shoppingCartIcon{
+    margin-top: 6px;
+}
+
+.eachOPTimeCont{
+    padding: 9px 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.eachOpTimeRange{
+    width: 91px;
+    font-weight: bolder;
+}
+
+
+
+.generalRestoDescription{
+    width: 650px;
+    background-color: white;
+    box-shadow: var(--aHighlightBoxShadow);
+    padding: 15px 21px;
+}
+
+.DataGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 80px;
+}
+
+.aDataGridItem{
+    display: flex;
+    align-items: center;
+    width: 210px;
+    padding: 9px;
+    margin: 9px 15px;
+    transition: var(--general-transition);
+    border: solid 1px transparent;
+}
+
+.aDataGridItem:hover{
+    box-shadow: var(--aHighlightBoxShadow);
+    background-color: var(--azureMainTheme);
+    transform: translateY(-12px);
+    border: solid 1px grey;
+    color: white;
+}
+
+.openingTimesCont{
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    padding: 0 12px;
+    margin: 21px;
+}
+
+
+@media (max-width: 700px) {
+
+    .aMenuDisp{
+        width: 100%;
+    }
+    .generalRestoDescription{
+        width: 100%;
+        padding: 21px;
+    }
+
 }
